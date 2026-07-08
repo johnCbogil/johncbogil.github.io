@@ -16,6 +16,8 @@ personal home on the web: quiet, fast, readable, and durable.
   to writing/projects/contact.
 - Use modern typography, spacing, and responsive behavior to make the site feel
   current without becoming visually busy.
+- Use a quiet system sans-serif font stack across the whole site, favoring San
+  Francisco on Apple platforms and Helvetica Neue where available.
 - Favor plain HTML links and simple lists over decorative cards.
 - Use restrained color. A mostly neutral palette with one accent color is fine.
 - Make essays, notes, links, and project pages comfortable to read on mobile and
