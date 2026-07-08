@@ -39,6 +39,7 @@
 
       a {
         color: var(--accent);
+        overflow-wrap: anywhere;
         text-decoration-thickness: 0.08em;
         text-underline-offset: 0.18em;
       }
@@ -54,7 +55,8 @@
       }
 
       .page {
-        width: min(100% - 40px, 780px);
+        width: calc(100% - 40px);
+        max-width: 780px;
         margin: 0 auto;
         padding: 56px 0 72px;
       }
@@ -84,7 +86,7 @@
 
       h1 {
         margin: 0;
-        font-size: clamp(2rem, 7vw, 4.25rem);
+        font-size: 4rem;
         font-weight: 500;
         line-height: 0.98;
       }
@@ -116,7 +118,7 @@
       .intro {
         max-width: 670px;
         margin: 0 0 46px;
-        font-size: clamp(1.25rem, 2.4vw, 1.62rem);
+        font-size: 1.5rem;
         line-height: 1.42;
       }
 
@@ -176,7 +178,7 @@
 
       @media (max-width: 660px) {
         .page {
-          width: min(100% - 28px, 780px);
+          width: calc(100% - 28px);
           padding-top: 28px;
           padding-bottom: 48px;
         }
@@ -189,6 +191,19 @@
         nav {
           justify-content: flex-start;
           margin-top: 22px;
+        }
+
+        h1 {
+          font-size: 2.45rem;
+        }
+
+        .mark {
+          width: 40px;
+          height: 40px;
+        }
+
+        .intro {
+          font-size: 1.25rem;
         }
 
         .grid {

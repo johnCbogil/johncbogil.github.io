@@ -53,6 +53,11 @@ it obvious that it should be replaced.
 ## Quality Bar
 
 - The site must be responsive and readable on narrow mobile screens.
+- Before finishing layout changes, verify `/` and every page in `writing/` at
+  320px, 375px, 768px, and desktop widths. There should be no horizontal
+  overflow, clipped content, or narrow one-word text columns.
+- Prefer broadly supported responsive CSS such as `width: calc(100% - 28px)`
+  plus `max-width` for centered content containers.
 - Use semantic HTML where possible.
 - Maintain good contrast and visible focus states.
 - Keep page weight small and loading fast.

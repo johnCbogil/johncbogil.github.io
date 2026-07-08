@@ -39,6 +39,7 @@
 
       a {
         color: var(--accent);
+        overflow-wrap: anywhere;
         text-decoration-thickness: 0.08em;
         text-underline-offset: 0.18em;
       }
@@ -54,7 +55,8 @@
       }
 
       .page {
-        width: min(100% - 40px, 720px);
+        width: calc(100% - 40px);
+        max-width: 720px;
         margin: 0 auto;
         padding: 46px 0 72px;
       }
@@ -82,7 +84,7 @@
       h1 {
         max-width: 620px;
         margin: 0;
-        font-size: clamp(2rem, 8vw, 4rem);
+        font-size: 3.65rem;
         font-weight: 500;
         line-height: 1;
       }
@@ -97,9 +99,13 @@
 
       @media (max-width: 660px) {
         .page {
-          width: min(100% - 28px, 720px);
+          width: calc(100% - 28px);
           padding-top: 28px;
           padding-bottom: 48px;
+        }
+
+        h1 {
+          font-size: 2.35rem;
         }
 
         header {
