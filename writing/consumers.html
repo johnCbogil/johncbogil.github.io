@@ -11,12 +11,12 @@
     <style>
       :root {
         color-scheme: light;
-        --bg: #fbfaf7;
-        --text: #171717;
-        --muted: #62615d;
-        --line: #dedbd3;
-        --accent: #0f766e;
-        --accent-soft: #e2f3ef;
+        --bg: #fff;
+        --text: #000;
+        --muted: #000;
+        --line: #000;
+        --accent: #000;
+        --focus: #000;
       }
 
       * {
@@ -45,12 +45,12 @@
       }
 
       a:hover {
-        color: #0b5d57;
+        color: var(--text);
       }
 
       a:focus-visible {
         border-radius: 4px;
-        outline: 3px solid var(--accent-soft);
+        outline: 3px solid var(--focus);
         outline-offset: 3px;
       }
 

@@ -19,7 +19,9 @@ personal home on the web: quiet, fast, readable, and durable.
 - Use a quiet system sans-serif font stack across the whole site, favoring San
   Francisco on Apple platforms and Helvetica Neue where available.
 - Favor plain HTML links and simple lists over decorative cards.
-- Use restrained color. A mostly neutral palette with one accent color is fine.
+- Use black and white only: white backgrounds, black text, black links, black
+  borders, and black focus states. Do not introduce accent colors, gray text,
+  tinted backgrounds, gradients, or decorative color.
 - Make essays, notes, links, and project pages comfortable to read on mobile and
   desktop.
 - Avoid hero marketing sections, stock imagery, large gradients, animations for
