@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="John Bogil's personal website: writing, projects, and links."
+    >
+    <title>John Bogil</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fbfaf7;
+        --text: #171717;
+        --muted: #62615d;
+        --line: #dedbd3;
+        --accent: #0f766e;
+        --accent-soft: #e2f3ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        line-height: 1.58;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        color: #0b5d57;
+      }
+
+      a:focus-visible {
+        border-radius: 4px;
+        outline: 3px solid var(--accent-soft);
+        outline-offset: 3px;
+      }
+
+      .page {
+        width: min(100% - 40px, 780px);
+        margin: 0 auto;
+        padding: 56px 0 72px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 44px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .identity {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 0;
+      }
+
+      .mark {
+        flex: 0 0 auto;
+        width: 46px;
+        height: 46px;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 4.25rem);
+        font-weight: 500;
+        line-height: 0.98;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        justify-content: flex-end;
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 0.93rem;
+      }
+
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: var(--text);
+      }
+
+      main {
+        padding-top: 44px;
+      }
+
+      .intro {
+        max-width: 670px;
+        margin: 0 0 46px;
+        font-size: clamp(1.25rem, 2.4vw, 1.62rem);
+        line-height: 1.42;
+      }
+
+      .intro strong {
+        font-weight: 500;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 42px;
+      }
+
+      section {
+        min-width: 0;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      ul {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        margin: 0;
+      }
+
+      .item-title {
+        display: inline;
+        font-size: 1.05rem;
+      }
+
+      .item-note {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      footer {
+        margin-top: 58px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 660px) {
+        .page {
+          width: min(100% - 28px, 780px);
+          padding-top: 28px;
+          padding-bottom: 48px;
+        }
+
+        header {
+          display: block;
+          padding-bottom: 30px;
+        }
+
+        nav {
+          justify-content: flex-start;
+          margin-top: 22px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 34px;
+        }
+
+        main {
+          padding-top: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="identity">
+          <svg
+            class="mark"
+            viewBox="0 0 64 64"
+            role="img"
+            aria-label="John Bogil monogram"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2" />
+            <path
+              d="M22 18v24c0 5.5-3.5 9-8.5 9M30 18h11c7 0 11 3.7 11 9.4 0 3.8-1.9 6.5-5.2 7.9 4.2 1.1 6.7 4 6.7 8.4 0 6.5-4.7 10.3-12.3 10.3H30V18Zm8 6.7v8.2h3.2c3 0 4.8-1.5 4.8-4.1s-1.8-4.1-4.9-4.1H38Zm0 14.2v8.4h3.9c3.3 0 5.2-1.5 5.2-4.2 0-2.8-1.9-4.2-5.4-4.2H38Z"
+              fill="currentColor"
+            />
+          </svg>
+          <h1>John Bogil</h1>
+        </div>
+        <nav aria-label="Primary navigation">
+          <a href="#writing">Writing</a>
+          <a href="#projects">Projects</a>
+          <a href="mailto:johncbogil@gmail.com">Email</a>
+          <a href="https://github.com/johnCbogil">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <p class="intro">
+          <strong>Personal website for notes, projects, and useful links.</strong>
+          This page is intentionally small: easy to read, easy to update, and
+          built to last on the open web.
+        </p>
+
+        <div class="grid">
+          <section id="writing" aria-labelledby="writing-title">
+            <h2 id="writing-title">Writing</h2>
+            <ul>
+              <li>
+                <span class="item-title">Notes will live here.</span>
+                <span class="item-note">Essays, observations, and longer-form thoughts.</span>
+              </li>
+              <li>
+                <span class="item-title">Reading list.</span>
+                <span class="item-note">Books, papers, and links worth returning to.</span>
+              </li>
+            </ul>
+          </section>
+
+          <section id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projects</h2>
+            <ul>
+              <li>
+                <span class="item-title">Work in progress.</span>
+                <span class="item-note">Selected software, experiments, and public artifacts.</span>
+              </li>
+              <li>
+                <a class="item-title" href="https://github.com/johnCbogil">GitHub</a>
+                <span class="item-note">Code and repositories.</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <span>Built with plain HTML and CSS. Hosted on GitHub Pages.</span>
+      </footer>
+    </div>
+  </body>
+</html>
