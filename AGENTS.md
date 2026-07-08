@@ -67,6 +67,11 @@ it obvious that it should be replaced.
 - Keep page weight small and loading fast.
 - Avoid layout shifts caused by late-loading assets.
 - Check links and asset paths before finishing.
+- External `http` and `https` links should open in a new tab with
+  `target="_blank"` and `rel="noopener noreferrer"`.
+- Internal site links, relative links, root-relative links, anchors, and
+  `mailto:` links should use default same-tab behavior. Do not add `target` or
+  `rel` attributes to them.
 
 ## Local Verification
 
