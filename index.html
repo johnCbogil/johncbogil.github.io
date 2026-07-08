@@ -67,20 +67,6 @@
         border-bottom: 1px solid var(--line);
       }
 
-      .identity {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        min-width: 0;
-      }
-
-      .mark {
-        flex: 0 0 auto;
-        width: 46px;
-        height: 46px;
-        color: var(--accent);
-      }
-
       h1 {
         margin: 0;
         font-size: 4rem;
@@ -97,10 +83,6 @@
         margin: 0 0 46px;
         font-size: 1.5rem;
         line-height: 1.42;
-      }
-
-      .intro strong {
-        font-weight: 500;
       }
 
       .grid {
@@ -164,11 +146,6 @@
           font-size: 2.45rem;
         }
 
-        .mark {
-          width: 40px;
-          height: 40px;
-        }
-
         .intro {
           font-size: 1.25rem;
         }
@@ -187,27 +164,12 @@
   <body>
     <div class="page">
       <header>
-        <div class="identity">
-          <svg
-            class="mark"
-            viewBox="0 0 64 64"
-            role="img"
-            aria-label="John Bogil monogram"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2" />
-            <path
-              d="M22 18v24c0 5.5-3.5 9-8.5 9M30 18h11c7 0 11 3.7 11 9.4 0 3.8-1.9 6.5-5.2 7.9 4.2 1.1 6.7 4 6.7 8.4 0 6.5-4.7 10.3-12.3 10.3H30V18Zm8 6.7v8.2h3.2c3 0 4.8-1.5 4.8-4.1s-1.8-4.1-4.9-4.1H38Zm0 14.2v8.4h3.9c3.3 0 5.2-1.5 5.2-4.2 0-2.8-1.9-4.2-5.4-4.2H38Z"
-              fill="currentColor"
-            />
-          </svg>
-          <h1>John Bogil</h1>
-        </div>
+        <h1>John Bogil</h1>
       </header>
 
       <main>
         <p class="intro">
-          <strong>I am a software engineer from Brooklyn.</strong>
+          I am a software engineer from Brooklyn.
           I am obsessed with solving the
           <a href="https://apnews.com/article/climate-united-nations-paris-europe-berlin-802ae4475c9047fb6d82ac88b37a690e">climate crisis</a>.
           Send me an email if you want to talk climate solutions.
@@ -258,7 +220,7 @@
                 <span class="item-note">Removing and verifying carbon, at scale.</span>
               </li>
               <li>
-                <a class="item-title" href="https://imgur.com/a/P96oSDm">Voices</a>
+                <a class="item-title" href="projects/voices.html">Voices</a>
                 <span class="item-note">Political tech startup.</span>
               </li>
               <li>
