@@ -12,7 +12,7 @@
     <title>The Trillion-Dollar Case for Biochar | John Bogil</title>
     <style>
       :root {
-        color-scheme: light;
+        color-scheme: light dark;
         --bg: #fff;
         --text: #000;
         --muted: #000;
@@ -21,6 +21,17 @@
         --focus: #000;
         --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
           "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000;
+          --text: #fff;
+          --muted: #fff;
+          --line: #fff;
+          --accent: #fff;
+          --focus: #fff;
+        }
       }
 
       * {
