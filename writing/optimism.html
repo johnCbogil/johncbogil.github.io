@@ -7,171 +7,28 @@
       name="description"
       content="John Bogil on staying optimistic while working toward a better world."
     >
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=1">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <title>How I Stay Optimistic | John Bogil</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #fff;
-        --text: #000;
-        --muted: #000;
-        --line: #000;
-        --accent: #000;
-        --focus: #000;
-        --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000;
-          --text: #fff;
-          --muted: #fff;
-          --line: #fff;
-          --accent: #fff;
-          --focus: #fff;
-        }
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        font-size: 16px;
-      }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: var(--font-sans);
-        line-height: 1.66;
-        text-rendering: optimizeLegibility;
-      }
-
-      a {
-        color: var(--accent);
-        overflow-wrap: anywhere;
-        text-decoration-thickness: 0.08em;
-        text-underline-offset: 0.18em;
-      }
-
-      a:hover {
-        color: var(--text);
-      }
-
-      a:focus-visible {
-        border-radius: 4px;
-        outline: 3px solid var(--focus);
-        outline-offset: 3px;
-      }
-
-      .page {
-        width: calc(100% - 40px);
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 46px 0 72px;
-      }
-
-      header {
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .back-link {
-        display: inline-block;
-        margin-bottom: 28px;
-        color: var(--muted);
-        font-family: var(--font-sans);
-        font-size: 0.92rem;
-        text-decoration: none;
-      }
-
-      .back-link:hover {
-        color: var(--text);
-      }
-
-      h1 {
-        max-width: 620px;
-        margin: 0;
-        font-size: 3.65rem;
-        font-weight: 500;
-        line-height: 1;
-      }
-
-      .post-date {
-        display: block;
-        margin-top: 14px;
-        font-size: 0.92rem;
-      }
-
-      main {
-        padding-top: 36px;
-      }
-
-      p {
-        margin: 0 0 1.1rem;
-      }
-
-      h2 {
-        margin: 2rem 0 0.55rem;
-        font-family: var(--font-sans);
-        font-size: 0.82rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--muted);
-      }
-
-      .lede {
-        font-size: 1.35rem;
-        line-height: 1.48;
-      }
-
-      blockquote {
-        margin: 1.5rem 0;
-        padding-left: 1.1rem;
-        border-left: 2px solid var(--line);
-        color: var(--muted);
-        font-style: italic;
-      }
-
-      @media (max-width: 660px) {
-        .page {
-          width: calc(100% - 36px);
-          padding-top: 28px;
-          padding-bottom: 48px;
-        }
-
-        h1 {
-          font-size: 2.35rem;
-        }
-
-        .lede {
-          font-size: 1.18rem;
-        }
-
-        header {
-          padding-bottom: 26px;
-        }
-
-        main {
-          padding-top: 30px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css?v=20260924-2">
   </head>
   <body>
-    <div class="page">
-      <header>
-        <a class="back-link" href="../">&larr; Back</a>
-        <h1>How I Stay Optimistic</h1>
-        <time class="post-date" datetime="2025-07-05">7/5/25</time>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="subpage-shell">
+      <header class="subpage-header">
+        <div class="subpage-meta">
+          <a class="back-link" href="../">&larr; Back</a>
+          <time class="post-date" datetime="2025-07-05">7/5/25</time>
+        </div>
+        <div class="subpage-title-wrap">
+          <span class="eyebrow">Writing / Perspective</span>
+          <h1>How I Stay Optimistic</h1>
+        </div>
       </header>
 
-      <main>
+      <main class="article-grid" id="main">
+        <aside class="article-rail" aria-hidden="true"></aside>
+        <article class="article-content">
         <p class="lede">
           <strong>
             <a href="https://apnews.com/article/climate-united-nations-paris-europe-berlin-802ae4475c9047fb6d82ac88b37a690e" target="_blank" rel="noopener noreferrer">Things</a>
@@ -260,6 +117,8 @@
 
         <h2>Lastly</h2>
         <p>No dooming before bed.</p>
+        </article>
+        <div class="article-spacer" aria-hidden="true"></div>
       </main>
     </div>
   </body>

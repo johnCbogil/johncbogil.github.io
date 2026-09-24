@@ -3,288 +3,90 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="John Bogil is a startup founder from Brooklyn focused on climate solutions."
-    >
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <meta name="description" content="John Bogil is a startup founder from Brooklyn focused on climate solutions.">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=1">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css?v=20260924-2">
     <title>John Bogil</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #fff;
-        --text: #000;
-        --muted: #000;
-        --line: #000;
-        --accent: #000;
-        --focus: #000;
-        --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000;
-          --text: #fff;
-          --muted: #fff;
-          --line: #fff;
-          --accent: #fff;
-          --focus: #fff;
-        }
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        font-size: 16px;
-      }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: var(--font-sans);
-        line-height: 1.58;
-        text-rendering: optimizeLegibility;
-      }
-
-      a {
-        color: var(--accent);
-        overflow-wrap: anywhere;
-        text-decoration-thickness: 0.08em;
-        text-underline-offset: 0.18em;
-      }
-
-      a:hover {
-        color: var(--text);
-      }
-
-      a:focus-visible {
-        border-radius: 4px;
-        outline: 3px solid var(--focus);
-        outline-offset: 3px;
-      }
-
-      .page {
-        width: calc(100% - 40px);
-        max-width: 780px;
-        margin: 0 auto;
-        padding: 56px 0 72px;
-      }
-
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 28px;
-        padding-bottom: 44px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 4rem;
-        font-weight: 500;
-        line-height: 0.98;
-      }
-
-      .avatar {
-        display: block;
-        width: 112px;
-        height: 112px;
-        flex: 0 0 auto;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        filter: grayscale(100%);
-        object-fit: cover;
-      }
-
-      main {
-        padding-top: 44px;
-      }
-
-      .intro {
-        max-width: 670px;
-        margin: 0 0 46px;
-        font-size: 1.5rem;
-        line-height: 1.42;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-        gap: 42px;
-      }
-
-      section {
-        min-width: 0;
-      }
-
-      h2 {
-        margin: 0 0 14px;
-        font-family: var(--font-sans);
-        font-size: 0.78rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--muted);
-      }
-
-      ul {
-        display: grid;
-        gap: 12px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      li {
-        margin: 0;
-      }
-
-      .item-title {
-        display: inline;
-        font-size: 1.05rem;
-      }
-
-      .item-note {
-        display: block;
-        margin-top: 2px;
-        color: var(--muted);
-        font-family: var(--font-sans);
-        font-size: 0.92rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 660px) {
-        .page {
-          width: calc(100% - 36px);
-          padding-top: 28px;
-          padding-bottom: 48px;
-        }
-
-        header {
-          gap: 18px;
-          padding-bottom: 30px;
-        }
-
-        h1 {
-          font-size: 2.45rem;
-        }
-
-        .avatar {
-          width: 76px;
-          height: 76px;
-        }
-
-        .intro {
-          font-size: 1.25rem;
-        }
-
-        .grid {
-          grid-template-columns: 1fr;
-          gap: 34px;
-        }
-
-        main {
-          padding-top: 32px;
-        }
-      }
-    </style>
   </head>
   <body>
-    <div class="page">
-      <header>
-        <h1>John Bogil</h1>
-        <img
-          class="avatar"
-          src="assets/avatar.jpg"
-          width="512"
-          height="512"
-          alt="John Bogil"
-        >
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="John Bogil, home">
+          <span class="brand-mark" aria-hidden="true">JB</span>
+          <span>John Bogil</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#writing">Writing</a>
+          <a href="#built">Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
-      <main>
-        <p class="intro">
-          I'm a startup founder from Brooklyn.
-          I'm obsessed with solving the
-          <a href="https://apnews.com/article/climate-united-nations-paris-europe-berlin-802ae4475c9047fb6d82ac88b37a690e" target="_blank" rel="noopener noreferrer">climate crisis</a>.
-          Send me an email if you want to talk climate solutions.
-        </p>
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-card">
+            <h1 class="hero-title" id="hero-title">The climate crisis<br>demands radical urgency.</h1>
+            <div class="hero-summary">
+              <p>
+                My name is John and I'm obsessed with solving the
+                <a href="https://apnews.com/article/climate-united-nations-paris-europe-berlin-802ae4475c9047fb6d82ac88b37a690e" target="_blank" rel="noopener noreferrer">climate crisis</a>.
+                Send me an email if you want to talk climate solutions.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <div class="grid">
-          <section id="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contact</h2>
-            <ul>
-              <li>
-                <a class="item-title" href="mailto:johncbogil@gmail.com">johnCbogil@gmail.com</a>
-              </li>
-              <li>
-                <a class="item-title" href="https://www.linkedin.com/in/johnbogil/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              </li>
-              <li>
-                <a class="item-title" href="https://github.com/johnCbogil" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </li>
+        <div class="home-grid">
+          <div class="catalog-column">
+        <section class="section-block" id="writing" aria-labelledby="writing-title">
+          <div class="section-heading">
+            <h2 class="section-kicker" id="writing-title">Writing</h2>
+          </div>
+          <ol class="index-list writing-list">
+            <li><span class="row-index">005</span><a class="writing-link" href="writing/trillion-dollar-case-for-biochar.html"><span>The Trillion-Dollar Case for Biochar</span><time class="writing-date" datetime="2026-09-11">9/11/26</time></a></li>
+            <li><span class="row-index">004</span><a class="writing-link" href="writing/books.html"><span>The Books I Think About Most Often</span><time class="writing-date" datetime="2026-03-21">3/21/26</time></a></li>
+            <li><span class="row-index">003</span><a class="writing-link" href="writing/optimism.html"><span>How I Stay Optimistic</span><time class="writing-date" datetime="2025-07-05">7/5/25</time></a></li>
+            <li><span class="row-index">002</span><a class="writing-link" href="writing/carbon-removal.html"><span>Why Carbon Removal?</span><time class="writing-date" datetime="2025-04-04">4/4/25</time></a></li>
+            <li><span class="row-index">001</span><a class="writing-link" href="writing/consumers.html"><span>Don’t Blame Consumers</span><time class="writing-date" datetime="2022-05-03">5/3/22</time></a></li>
+          </ol>
+        </section>
+
+        <section class="section-block" id="built" aria-labelledby="built-title">
+          <div class="section-heading">
+            <h2 class="section-kicker" id="built-title">Works</h2>
+          </div>
+          <ol class="index-list projects-list">
+            <li><span class="row-index">004</span><a class="project-link" href="https://www.valorizesystems.com/" target="_blank" rel="noopener noreferrer"><span>Valorize Systems</span><span class="project-subtitle">Biochar for industrial supply chains</span></a></li>
+            <li><span class="row-index">003</span><a class="project-link" href="https://redditinc.com/news/bringing-more-of-dubsmash-to-reddit-by-launching-new-video-features" target="_blank" rel="noopener noreferrer"><span>Reddit</span><span class="project-subtitle">Video creation team</span></a></li>
+            <li><span class="row-index">002</span><a class="project-link" href="https://techcrunch.com/2020/12/13/reddit-acquires-dubsmash/" target="_blank" rel="noopener noreferrer"><span>Dubsmash</span><span class="project-subtitle">Employee #9, acquired by Reddit</span></a></li>
+            <li><span class="row-index">001</span><a class="project-link" href="projects/voices.html"><span>Voices</span><span class="project-subtitle">Political tech startup</span></a></li>
+          </ol>
+        </section>
+          </div>
+
+        <aside class="profile-column" id="contact" aria-label="Contact and interests">
+          <div class="utility-panel">
+            <h2 class="utility-kicker">Contact</h2>
+            <ul class="profile-list">
+              <li><a href="mailto:johncbogil@gmail.com">johnCbogil@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/johnbogil/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+              <li><a href="https://github.com/johnCbogil" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
             </ul>
-          </section>
-
-          <section id="writing" aria-labelledby="writing-title">
-            <h2 id="writing-title">Writing</h2>
-            <ul>
-              <li>
-                <a class="item-title" href="writing/trillion-dollar-case-for-biochar.html">The Trillion-Dollar Case for Biochar</a>
-              </li>
-              <li>
-                <a class="item-title" href="writing/books.html">The Books I Think About Most Often</a>
-              </li>
-              <li>
-                <a class="item-title" href="writing/optimism.html">How I Stay Optimistic</a>
-              </li>
-              <li>
-                <a class="item-title" href="writing/carbon-removal.html">Why Carbon Removal?</a>
-              </li>
-              <li>
-                <a class="item-title" href="writing/consumers.html">Don't Blame Consumers</a>
-              </li>
-            </ul>
-          </section>
-
-          <section id="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Built</h2>
-            <ul>
-              <li>
-                <a class="item-title" href="https://www.valorizesystems.com/" target="_blank" rel="noopener noreferrer">Valorize Systems</a>
-                <span class="item-note">Biochar for Industrial Supply Chains</span>
-              </li>
-              <li>
-                <a class="item-title" href="https://redditinc.com/news/bringing-more-of-dubsmash-to-reddit-by-launching-new-video-features" target="_blank" rel="noopener noreferrer">Reddit</a>
-                <span class="item-note">Video Creation Team</span>
-              </li>
-              <li>
-                <a class="item-title" href="https://techcrunch.com/2020/12/13/reddit-acquires-dubsmash/" target="_blank" rel="noopener noreferrer">Dubsmash</a>
-                <span class="item-note">Employee #9, Acquired by Reddit</span>
-              </li>
-              <li>
-                <a class="item-title" href="projects/voices.html">Voices</a>
-                <span class="item-note">Political Tech Startup</span>
-              </li>
-            </ul>
-          </section>
-
-          <section id="hobbies" aria-labelledby="hobbies-title">
-            <h2 id="hobbies-title">Hobbies</h2>
-            <ul>
+          </div>
+          <div class="utility-panel">
+            <h2 class="utility-kicker">Hobbies</h2>
+            <ul class="profile-list">
               <li>Running</li>
               <li>Go (baduk)</li>
-              <li>Physics, Economics, Storytelling</li>
+              <li>Physics, economics, storytelling</li>
             </ul>
-          </section>
+          </div>
+        </aside>
         </div>
       </main>
+
     </div>
   </body>
 </html>

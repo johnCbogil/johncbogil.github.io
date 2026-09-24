@@ -7,156 +7,30 @@
       name="description"
       content="Books John Bogil thinks about most often."
     >
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=1">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <title>The Books I Think About Most Often | John Bogil</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #fff;
-        --text: #000;
-        --muted: #000;
-        --line: #000;
-        --accent: #000;
-        --focus: #000;
-        --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000;
-          --text: #fff;
-          --muted: #fff;
-          --line: #fff;
-          --accent: #fff;
-          --focus: #fff;
-        }
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        font-size: 16px;
-      }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: var(--font-sans);
-        line-height: 1.62;
-        text-rendering: optimizeLegibility;
-      }
-
-      a {
-        color: var(--accent);
-        overflow-wrap: anywhere;
-        text-decoration-thickness: 0.08em;
-        text-underline-offset: 0.18em;
-      }
-
-      a:hover {
-        color: var(--text);
-      }
-
-      a:focus-visible {
-        border-radius: 4px;
-        outline: 3px solid var(--focus);
-        outline-offset: 3px;
-      }
-
-      .page {
-        width: calc(100% - 40px);
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 46px 0 72px;
-      }
-
-      header {
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .back-link {
-        display: inline-block;
-        margin-bottom: 28px;
-        color: var(--muted);
-        font-family: var(--font-sans);
-        font-size: 0.92rem;
-        text-decoration: none;
-      }
-
-      .back-link:hover {
-        color: var(--text);
-      }
-
-      h1 {
-        max-width: 620px;
-        margin: 0;
-        font-size: 3.65rem;
-        font-weight: 500;
-        line-height: 1;
-      }
-
-      .post-date {
-        display: block;
-        margin-top: 14px;
-        font-size: 0.92rem;
-      }
-
-      main {
-        padding-top: 36px;
-      }
-
-      ol {
-        display: grid;
-        gap: 12px;
-        margin: 0;
-        padding-left: 1.35rem;
-      }
-
-      li {
-        padding-left: 0.25rem;
-      }
-
-      .author {
-        color: var(--muted);
-      }
-
-      @media (max-width: 660px) {
-        .page {
-          width: calc(100% - 36px);
-          padding-top: 28px;
-          padding-bottom: 48px;
-        }
-
-        h1 {
-          font-size: 2.35rem;
-        }
-
-        header {
-          padding-bottom: 26px;
-        }
-
-        main {
-          padding-top: 30px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css?v=20260924-2">
   </head>
   <body>
-    <div class="page">
-      <header>
-        <a class="back-link" href="../">&larr; Back</a>
-        <h1>The Books I Think About Most Often</h1>
-        <time class="post-date" datetime="2026-03-21">3/21/26</time>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="subpage-shell">
+      <header class="subpage-header">
+        <div class="subpage-meta">
+          <a class="back-link" href="../">&larr; Back</a>
+          <time class="post-date" datetime="2026-03-21">3/21/26</time>
+        </div>
+        <div class="subpage-title-wrap">
+          <span class="eyebrow">Writing / Reading list</span>
+          <h1>The Books I Think About Most Often</h1>
+          <p class="post-note">Books are <em>roughly</em> ordered by most often to least often.</p>
+        </div>
       </header>
 
-      <main>
-        <ol>
+      <main class="article-grid" id="main">
+        <aside class="article-rail" aria-hidden="true"></aside>
+        <article class="article-content">
+        <ol class="book-list">
           <li>
             <a href="https://en.wikipedia.org/wiki/Steve_Jobs_(book)" target="_blank" rel="noopener noreferrer">Steve Jobs</a>
             <span class="author">by Walter Isaacson</span>
@@ -218,6 +92,8 @@
             <span class="author">by Yuval Noah Harari</span>
           </li>
         </ol>
+        </article>
+        <div class="article-spacer" aria-hidden="true"></div>
       </main>
     </div>
   </body>
