@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John Bogil — social preview artwork</title>
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        padding: 24px;
+        background: #fff;
+        color: #000;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .preview {
+        height: 100%;
+        border: 1px solid #000;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 94px;
+        padding: 0 32px;
+        border-bottom: 1px solid #000;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 27px;
+        font-weight: 700;
+      }
+
+      .mark {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        background: #000;
+        color: #fff;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 16px;
+      }
+
+      .domain,
+      footer {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 17px;
+        letter-spacing: 0.05em;
+      }
+
+      main {
+        height: 390px;
+        padding: 32px;
+        background: #000;
+      }
+
+      .statement {
+        height: 100%;
+        padding: 32px;
+        background: #fff;
+      }
+
+      h1 {
+        margin: 0 0 28px;
+        font-size: 78px;
+        font-weight: 500;
+        letter-spacing: -0.065em;
+        line-height: 0.96;
+      }
+
+      p {
+        max-width: 780px;
+        margin: 0;
+        font-size: 25px;
+        line-height: 1.4;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 96px;
+        text-transform: uppercase;
+      }
+
+      footer span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+      }
+
+      footer span + span { border-left: 1px solid #000; }
+    </style>
+  </head>
+  <body>
+    <div class="preview">
+      <header>
+        <div class="brand"><span class="mark">JB</span>John Bogil</div>
+        <span class="domain">johnbogil.com</span>
+      </header>
+      <main>
+        <div class="statement">
+          <h1>The climate crisis<br>demands radical urgency.</h1>
+          <p>My name is John and I'm obsessed with solving the climate crisis.<br>Send me an email if you want to talk climate solutions.</p>
+        </div>
+      </main>
+      <footer>
+        <span>Writing <b aria-hidden="true">→</b></span>
+        <span>Works <b aria-hidden="true">→</b></span>
+        <span>Contact <b aria-hidden="true">→</b></span>
+      </footer>
+    </div>
+  </body>
+</html>
